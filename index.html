@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <section class="signup-component">
+    <article class="signup-component__description">
+      <h1 class="signup-component__title"> Learn to code by watching others</h1>
+      <p class="signup-component__info">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </article>
+    <article class="signup-component__register">
+      <div class="signup-component__subscription-price">
+        <span class="white-medium">Try it free 7 days</span> then $20/mo. thereafter
+      </div>
+      <form action="#" class="signup-component__form form">
+        <div class="signup-component__imput-item">
+          <input class="form__input" type="text" name="first-name" id="first-name" placeholder="First Name" required>
+          <span class="signup-component__form-error"></span>
+        </div>
+        <div class="signup-component__imput-item">
+          <input class="form__input" type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+          <span class="signup-component__form-error"></span>
+        </div>
+        <div class="signup-component__imput-item">
+          <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9\-]+(\.[a-z0-9\-]+)*(\.[a-z]{2,15})$">
+          <span class="signup-component__form-error"></span>
+        </div>
+        <div class="signup-component__imput-item">
+          <input class="form__input" type="password" name="password" id="password" placeholder="Password" required>
+          <span class="signup-component__form-error"></span>
+        </div>
+        <input class="form__button" type="submit" value="CLAIM YOUR FREE TRIAL">
+        <small class="signup-component__terms">
+          By clicking the button, you are agreeing to our <span class="red-medium">Terms and Services</span>
+        </small>
+      </form>
+    </article>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
